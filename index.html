@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+  <div id="app">
+    <v-app>
+      <v-main>
+        <v-container fill-height>
+          <v-row class="fill-height" align="center" no-gutters>
+            <v-card class="mx-auto py-4" max-width="344">
+
+              <v-list-item three-line>
+                <v-list-item-content>
+                  <v-list-item-title class="headline mb-1">{{ name }}</v-list-item-title>
+                  <v-list-item-subtitle>{{ job }}</v-list-item-subtitle>
+                  <v-list-item-subtitle>{{ mail }}</v-list-item-subtitle>
+                  <v-list-item-subtitle>{{ tel }}</v-list-item-subtitle>
+                </v-list-item-content>
+            
+                <v-list-item-avatar tile size="80" color="grey">
+                  <v-img src="https://picsum.photos/510/300?random" />
+                </v-list-item-avatar>
+              </v-list-item>
+          
+            </v-card>
+          </v-row>
+        </v-container>
+      </v-main>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+      data: {
+        name: 'Tony DUONG',
+        job: 'Web developer',
+        mail: 'tonys.tech.official@gmail.com',
+        tel: '07 68 01 20 72',
+        imageSrc: ''
+      }
+    })
+  </script>
+</body>
+
+</html>
